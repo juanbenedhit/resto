@@ -482,7 +482,7 @@ body {
 #tentang{
   font-family: 'Segoe UI';
   font-weight: 400;
-  background-image: url(../gambar/brennan-burling-ay53qag90W8-unsplash.jpg);
+  background-image: url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
 }
 
 
@@ -549,22 +549,3 @@ body {
   font-size: 14px;
   color: rgba(245, 245, 245, 0.566);
 }
-
-
-
-
-
-
-/*CLICK AUTO SCROLL BISA DIDELETE*/
-/*class="section" DI HTML BISA DIDELETE*/
-
-
-.section {
-  height: auto;
-  margin-top: 0px;
-}
-.section h2 {
-  margin: 0;
-}
-
-/*RESPOSIVE WEB BELUM*/
