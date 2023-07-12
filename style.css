@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONT header */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONT header n NAV*/
 
-
 * {
   margin: 0;
   padding: 0;
@@ -23,52 +22,44 @@ body {
   min-height: 10vh;
 }
 
-
-
-
-
 /* navbarBAR */
 .navbar {
-	background-color: #0707056a;
-	padding: 10px 10px 0px;
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-	display: inline-flex;
-	justify-content: space-between;
-	overflow: hidden;
+  background-color: #0707056a;
+  padding: 10px 10px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
-  
+
 .navbar li {
-    
-	float: left;
+  float: left;
   list-style: none;
 }
-  
+
 .navbar li a {
-    font-family: 'Belanosima', sans-serif;
-    font-weight: bold;
-	display: block;
-	color: #ff8000;
-	padding: 14px 16px;
+  font-family: 'Belanosima', sans-serif;
+  font-weight: bold;
+  display: block;
+  color: #ff8000;
+  padding: 14px 16px;
   text-decoration: none;
-	transition: 0.6s all ease;
-	border-radius: 15px;
+  transition: 0.6s all ease;
+  border-radius: 15px;
 }
 
 .navbar li a:hover {
-	background-color: #ff8000;
-	color: whitesmoke;
+  background-color: #ff8000;
+  color: whitesmoke;
 }
-
-
 
 /*LOGO NAVBAR*/
 .navbar-image img {
-	margin-right: 20px;
-	height: 58px;
+  margin-right: 20px;
+  height: 58px;
   filter: drop-shadow(1px 0px 0px #05799e);
-
 }
 
 .navbar-image img:hover {
@@ -76,11 +67,8 @@ body {
   transform: scale(1.5) rotate(10deg);
 }
 
-
-
-
 /* HOME */
-#home{
+#home {
   width: auto;
 }
 
@@ -91,13 +79,11 @@ body {
   justify-content: center;
 }
 
-.home-background{
-  background-image:url("gambar/back1.jpg");
+.home-background {
+  background-image: url("gambar/back1.jpg");
   object-fit: contain;
   background-size: cover;
 }
-
-
 
 /*LOGO HEADER*/
 .home-image img {
@@ -105,20 +91,18 @@ body {
   filter: drop-shadow(4px 1px 1px #3588d1);
 }
 
-
-
 /*TEXT HEADER*/
 .home-text {
   border: solid #9d6c3b00;
-  border-radius:  40px 18px 40px 18px ;
+  border-radius: 40px 18px 40px 18px;
   margin-right: 20px;
   padding: 30px 40px 30px 40px;
-  background-color:  rgba(0, 0, 0, 0.46) ;
+  background-color: rgba(0, 0, 0, 0.46);
 }
 
 .home-text h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 6px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 6px;
   color: #D05B19;
   text-align: right;
   font-weight: bold;
@@ -127,28 +111,25 @@ body {
 }
 
 .home-text p {
-    font-family: 'Libre Baskerville', serif;
-  color:  rgb(236, 226, 226);
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(236, 226, 226);
   text-align: justify;
   padding-top: 20px;
   padding-bottom: 15%;
   font-size: 21px;
 }
 
-.home-text span{
+.home-text span {
   color: #ff8000;
 }
 
-
-
 /* HOME MENU BUTTON */
-
 .home-text a {
-  color : rgba(255, 255, 255, 0.545);
-    font-family: 'Belanosima', sans-serif;
+  color: rgba(255, 255, 255, 0.545);
+  font-family: 'Belanosima', sans-serif;
   font-size: 15px;
   padding: 1rem 3rem;
-  background-color: #ff800057;  
+  background-color: #ff800057;
   transition: 0.4s all ease;
   text-decoration: none;
   border-radius: 15px;
@@ -162,22 +143,14 @@ body {
   box-shadow: 0px 0px 10px #D05B19;
 }
 
-
-
-
-
 /*SLIDER*/
-
-#gallery{
-  background-image:url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
-  padding-top: 80px;  
+#gallery {
+  background-image: url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
+  padding-top: 80px;
   height: 800px;
 }
 
-
-
 .slider {
-  
   width: 200vmin;
   height: 55vmin;
   top: 30%;
@@ -188,8 +161,6 @@ body {
   box-shadow: 0px 0px 5px black;
   border-radius: 6px;
   position: relative;
-  
-  
 }
 
 .slider figure {
@@ -202,28 +173,24 @@ body {
   width: 100%;
   height: 60vmin;
   object-fit: cover;
-
-
-  padding: 0px 5px 0px 5px ;
+  padding: 0px 5px 0px 5px;
 }
 
-@keyframes slide{
-  0%{
-      transform: translateX(0);
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  25%{
-      transform: translateX(0);
+  25% {
+    transform: translateX(0);
   }
-  
-  80%{
-      transform: translateX(-300%);
+
+  80% {
+    transform: translateX(-300%);
   }
-  100%{
-      transform: translateX(-300%);
+  100% {
+    transform: translateX(-300%);
   }
 }
-
-
 
 /* GAMBAR BAWAH SLIDER  */
 .gambar {
@@ -232,19 +199,18 @@ body {
   width: auto;
   height: 200px;
   margin: 30px 0px 0px 9px;
-  
-  
 }
 
-.gambar img{
-  margin:0px 10px 0px 10px;
+.gambar img {
+  margin: 0px 10px 0px 10px;
   width: 280px;
   border-radius: 10px;
   transition: 0.5s ease-in-out;
   box-shadow: 1px 1px 1px #D05B19;
   object-fit: cover;
 }
-.gambar img:hover{
+
+.gambar img:hover {
   transform: scale(1.1);
   letter-spacing: 2px;
   border-radius: 15px;
@@ -252,15 +218,10 @@ body {
   border-top: 5px solid #d05c196e;
 }
 
-
-
-
-
 /* MENU fav YA GES YA */
-
 .container {
   margin-top: 70px;
-  background-image:url("gambar/back1.jpg");
+  background-image: url("gambar/back1.jpg");
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -269,7 +230,7 @@ body {
   padding: 50px;
 }
 
-.container h2{
+.container h2 {
   color: #fa8105;
 }
 
@@ -292,80 +253,149 @@ body {
   transition: 0.4s linear;
 }
 
-.menu-card .rating{
+.menu-card .rating {
   color: #fa8105;
 }
 
-.menu-card .rating:hover{
+.menu-card .rating:hover {
   filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
-
 }
 
-
-.menu-card p{
+.menu-card p {
   text-align: justify;
   color: whitesmoke;
   font-size: 15px;
 }
-
 
 .menu-card img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-
 }
 
-
-
-
 /*BUTTON DOWNLOAD MENU */
-.download{
-  background-image:url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
+.download {
+  background-image: url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
   object-fit: cover;
-  padding:20px;
+  padding: 20px;
   text-align: center;
 }
 
-
-
-.download a{
+.download a {
   border-radius: 15px;
   background-color: #fa7f058b;
-  padding:10px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
   color: white;
   font-family: 'Bebas Neue', sans-serif;
   display: block;
-
-  
   letter-spacing: 2px;
   font-weight: bold;
   list-style: none;
   text-decoration: none;
 }
 
-.download a:hover{
+.download a:hover {
   background-color: #fa7f0520;
   letter-spacing: 20px;
   border: 1px solid orange;
   transition: 0.5s ease-in-out;
 }
 
-
-
 /*RESPONSIVE BISA DIPAKE */
 @media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    float: none;
+  }
+
+  .navbar li a {
+    padding: 10px;
+  }
+
+  .home-content {
+    height: auto;
+  }
+
+  .home-text {
+    margin-right: 0;
+    padding: 20px;
+  }
+
+  .home-text h2 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 16px;
+    padding-bottom: 10%;
+  }
+
+  .home-text a {
+    font-size: 13px;
+    padding: 0.8rem 2rem;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+    top: initial;
+    left: initial;
+    transform: initial;
+  }
+
+  .slider figure {
+    width: 100%;
+  }
+
+  .slider figure img {
+    height: auto;
+  }
+
+  .gambar {
+    width: 100%;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gambar img {
+    margin: 10px;
+    width: 90%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
   .menu-card {
     width: 100%;
   }
 
+  .menu-card img {
+    width: 70%;
+    height: auto;
+  }
 
-  
+  .home-image img,
+  .navbar-image img {
+    height: 40px;
+  }
+
+  .footer ul li a {
+    font-size: 14px;
+  }
+}
 
 /*INI APA YA BANG???--------------------------------------*/
-
-}
 .order-container {
   display: flex;
   justify-content: center;
@@ -382,14 +412,15 @@ body {
   text-decoration: none;
   font-size: 16px;
 }
+
 .container li {
   text-decoration: none;
   display: flex;
-
 }
-.container li a{
+
+.container li a {
   margin-top: 10rem;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
   padding: 1rem 3rem;
@@ -397,39 +428,35 @@ body {
   transition: 0.6s all ease;
   text-decoration: none;
   border-radius: 15px;
-  
- }
-
-
-
-
+}
 
 /*REVIEW PENGUNJUNG*/
-.reviews{
-  background-image:url("/gambar/back1.jpg");
+.reviews {
+  background-image: url("/gambar/back1.jpg");
   padding: 3rem 7%;
   font-family: 'Roboto', sans-serif;
 }
 
-.reviews h1{
+.reviews h1 {
   color: #ff8000;
   text-align: center;
   font-size: 40px;
   padding: 1.5rem 0;
 }
-.reviews h1:hover{
+
+.reviews h1:hover {
   color: #D05B19;
 }
 
-
-.reviews h1 span{
+.reviews h1 span {
   color: #D05B19;
 }
-.reviews h1 span:hover{
+
+.reviews h1 span:hover {
   color: #ff8000;
 }
 
-.mian-review{
+.mian-review {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,33 +464,31 @@ body {
   flex-wrap: wrap;
 }
 
-.inner-review{
+.inner-review {
   flex: 1 1 45rem;
   padding: 2rem 4rem;
   border-radius: 20px;
   margin-bottom: 30px;
-  border-bottom:  1px  solid #d05c19;
-  border-top:  1px  solid #d05c1954;
-
+  border-bottom: 1px solid #d05c19;
+  border-top: 1px solid #d05c1954;
 }
 
-
-.inner-review p{
+.inner-review p {
   font-size: 1.5rem;
   color: white;
 }
 
-.review-client{
+.review-client {
   display: flex;
   align-items: center;
   padding: 2rem 0;
 }
 
-.review-client span{
+.review-client span {
   font-size: 1.5rem;
   font-weight: bold;
   margin-left: 20px;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .rounded-image {
@@ -473,30 +498,24 @@ body {
   object-fit: cover;
 }
 
-
-
-
-
 /*FOOTER*/
-
-#tentang{
+#tentang {
   font-family: 'Segoe UI';
   font-weight: 400;
-  background-image: url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
+  background-image: url(../gambar/brennan-burling-ay53qag90W8-unsplash.jpg);
 }
 
-
-.footer{
-  padding:40px 0;
+.footer {
+  padding: 40px 0;
 }
 
-.footer .social{
+.footer .social {
   text-align: center;
   padding-bottom: 25px;
 }
 
-.footer .social a{
-  font-size:  25px;
+.footer .social a {
+  font-size: 25px;
   color: rgb(0, 0, 0);
   border: 1px solid;
   width: 40px;
@@ -510,12 +529,11 @@ body {
   opacity: 0.50;
 }
 
-
-.footer .social a:hover{
+.footer .social a:hover {
   opacity: 0.90;
 }
 
-.footer ul{
+.footer ul {
   margin-top: 0;
   padding: 0;
   list-style: none;
@@ -525,25 +543,22 @@ body {
   text-align: center;
 }
 
-
-.footer ul li{
+.footer ul li {
   display: inline-block;
   padding: 0 15px;
-
 }
 
-
-.footer ul li a{
+.footer ul li a {
   color: #D05B19;
   text-decoration: none;
   opacity: 0.6;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
   opacity: 1;
 }
 
-.footer .copyright{
+.footer .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 14px;
