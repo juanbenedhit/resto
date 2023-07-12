@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONT header */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONT header n NAV*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 10vh;
+}
+
+
+
+
+
+/* navbarBAR */
+.navbar {
+	background-color: #0707056a;
+	padding: 10px 10px 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	display: inline-flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+  
+.navbar li {
+    
+	float: left;
+  list-style: none;
+}
+  
+.navbar li a {
+    font-family: 'Belanosima', sans-serif;
+    font-weight: bold;
+	display: block;
+	color: #ff8000;
+	padding: 14px 16px;
+  text-decoration: none;
+	transition: 0.6s all ease;
+	border-radius: 15px;
+}
+
+.navbar li a:hover {
+	background-color: #ff8000;
+	color: whitesmoke;
+}
+
+
+
+/*LOGO NAVBAR*/
+.navbar-image img {
+	margin-right: 20px;
+	height: 58px;
+  filter: drop-shadow(1px 0px 0px #05799e);
+
+}
+
+.navbar-image img:hover {
+  transition: 0.5s;
+  transform: scale(1.5) rotate(10deg);
+}
+
+
+
+
+/* HOME */
+#home{
+  width: auto;
+}
+
+.home-content {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-background{
+  background-image:url("gambar/back1.jpg");
+  object-fit: contain;
+  background-size: cover;
+}
+
+
+
+/*LOGO HEADER*/
+.home-image img {
+  float: right;
+  filter: drop-shadow(4px 1px 1px #3588d1);
+}
+
+
+
+/*TEXT HEADER*/
+.home-text {
+  border: solid #9d6c3b00;
+  border-radius:  40px 18px 40px 18px ;
+  margin-right: 20px;
+  padding: 30px 40px 30px 40px;
+  background-color:  rgba(0, 0, 0, 0.46) ;
+}
+
+.home-text h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 6px;
+  color: #D05B19;
+  text-align: right;
+  font-weight: bold;
+  font-size: 2.9rem;
+  padding-bottom: 10px;
+}
+
+.home-text p {
+    font-family: 'Libre Baskerville', serif;
+  color:  rgb(236, 226, 226);
+  text-align: justify;
+  padding-top: 20px;
+  padding-bottom: 15%;
+  font-size: 21px;
+}
+
+.home-text span{
+  color: #ff8000;
+}
+
+
+
+/* HOME MENU BUTTON */
+
+.home-text a {
+  color : rgba(255, 255, 255, 0.545);
+    font-family: 'Belanosima', sans-serif;
+  font-size: 15px;
+  padding: 1rem 3rem;
+  background-color: #ff800057;  
+  transition: 0.4s all ease;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.home-text a:hover {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  outline-offset: 3px;
+  box-shadow: 0px 0px 10px #D05B19;
+}
+
+
+
+
+
+/*SLIDER*/
+
+#gallery{
+  background-image:url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
+  padding-top: 80px;  
+  height: 800px;
+}
+
+
+
+.slider {
+  
+  width: 200vmin;
+  height: 55vmin;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: 10px solid rgba(245, 222, 179, 0.151);
+  box-shadow: 0px 0px 5px black;
+  border-radius: 6px;
+  position: relative;
+  
+  
+}
+
+.slider figure {
+  width: 194vmin;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.slider figure img {
+  width: 100%;
+  height: 60vmin;
+  object-fit: cover;
+
+
+  padding: 0px 5px 0px 5px ;
+}
+
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+
+
+
+/* GAMBAR BAWAH SLIDER  */
+.gambar {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 200px;
+  margin: 30px 0px 0px 9px;
+  
+  
+}
+
+.gambar img{
+  margin:0px 10px 0px 10px;
+  width: 280px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 1px 1px 1px #D05B19;
+  object-fit: cover;
+}
+.gambar img:hover{
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 1px #d05c196e;
+  border-top: 5px solid #d05c196e;
+}
+
+
+
+
+
+/* MENU fav YA GES YA */
+
+.container {
+  margin-top: 70px;
+  background-image:url("gambar/back1.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.container h2{
+  color: #fa8105;
+}
+
+.menu-card {
+  width: 300px;
+  height: 420px;
+  background-color: #fa7f0520;
+  color: #0c0707;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  background-color: #fa7f058b;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid orange;
+  transition: 0.4s linear;
+}
+
+.menu-card .rating{
+  color: #fa8105;
+}
+
+.menu-card .rating:hover{
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+
+}
+
+
+.menu-card p{
+  text-align: justify;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+
+.menu-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+
+
+
+/*BUTTON DOWNLOAD MENU */
+.download{
+  background-image:url("gambar/brennan-burling-ay53qag90W8-unsplash.jpg");
+  object-fit: cover;
+  padding:20px;
+  text-align: center;
+}
+
+
+
+.download a{
+  border-radius: 15px;
+  background-color: #fa7f058b;
+  padding:10px 15px 10px 15px;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  display: block;
+
+  
+  letter-spacing: 2px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+
+.download a:hover{
+  background-color: #fa7f0520;
+  letter-spacing: 20px;
+  border: 1px solid orange;
+  transition: 0.5s ease-in-out;
+}
+
+
+
+/*RESPONSIVE BISA DIPAKE */
+@media (max-width: 600px) {
+  .menu-card {
+    width: 100%;
+  }
+
+
+  
+
+/*INI APA YA BANG???--------------------------------------*/
+
+}
+.order-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.order-button-responsive {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.container li {
+  text-decoration: none;
+  display: flex;
+
+}
+.container li a{
+  margin-top: 10rem;
+  color:#ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  background-color: #017EA6;
+  transition: 0.6s all ease;
+  text-decoration: none;
+  border-radius: 15px;
+  
+ }
+
+
+
+
+
+/*REVIEW PENGUNJUNG*/
+.reviews{
+  background-image:url("/gambar/back1.jpg");
+  padding: 3rem 7%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.reviews h1{
+  color: #ff8000;
+  text-align: center;
+  font-size: 40px;
+  padding: 1.5rem 0;
+}
+.reviews h1:hover{
+  color: #D05B19;
+}
+
+
+.reviews h1 span{
+  color: #D05B19;
+}
+.reviews h1 span:hover{
+  color: #ff8000;
+}
+
+.mian-review{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inner-review{
+  flex: 1 1 45rem;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border-bottom:  1px  solid #d05c19;
+  border-top:  1px  solid #d05c1954;
+
+}
+
+
+.inner-review p{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.review-client{
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.review-client span{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 20px;
+  color:rgb(255, 255, 255);
+}
+
+.rounded-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+
+
+
+/*FOOTER*/
+
+#tentang{
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  background-image: url(../gambar/brennan-burling-ay53qag90W8-unsplash.jpg);
+}
+
+
+.footer{
+  padding:40px 0;
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .social a{
+  font-size:  25px;
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #fa8105;
+  margin: 0 8px;
+  opacity: 0.50;
+}
+
+
+.footer .social a:hover{
+  opacity: 0.90;
+}
+
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+
+}
+
+
+.footer ul li a{
+  color: #D05B19;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer ul li a:hover{
+  opacity: 1;
+}
+
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(245, 245, 245, 0.566);
+}
+
+
+
+
+
+
+/*CLICK AUTO SCROLL BISA DIDELETE*/
+/*class="section" DI HTML BISA DIDELETE*/
+
+
+.section {
+  height: auto;
+  margin-top: 0px;
+}
+.section h2 {
+  margin: 0;
+}
+
+/*RESPOSIVE WEB BELUM*/
